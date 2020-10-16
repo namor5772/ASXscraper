@@ -18,7 +18,7 @@ How to install and run a python script that uses Selenium to automatically colle
  - We use a Windows 10 PC with internet
  - The Google Chrome browser is installed
  - Microsoft Excel is installed
- - The **C:\Users\roman\Documents\GitHub\ASXscraper** will be the working directory. It is arbitrary but if a different one is used it must be changed consistently.
+ - The **C:\Users\roman\Documents\GitHub\ASXscraper** will be the working directory. It is arbitrary but if a different one is used it must be changed consistently. Also any documents/setting that refer to it must be modified accordingly.
 
 ## **Download Python with IDLE and pip**
 
