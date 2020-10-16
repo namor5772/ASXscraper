@@ -70,6 +70,10 @@ This an interface used by Selenium to control the Chrome browser. You need a ver
 
     ![alt text](images/Chrome2.png "Selenium Install")
 
+  - NOTE: If the version has not changed you can download it from [HERE](data/chromedriver.exe)      
+
 ## Get the Excel workbook
 
-This is where the EOD share prices are loaded when the python script is run. It is a workbook called Shares.xlsx and is assumed to have a **Shares** worksheet.
+This is where the EOD share prices are loaded into when the python script is run. It is a workbook called Shares.xlsx and is assumed to have a **Shares** worksheet.
+- Download it from [HERE](data/Shares.xlsx) into the directory **C:\Users\roman\Documents\GitHub\ASXscraper**.
+- This directory might need to be created and can be changed, but you must do so consistently.
