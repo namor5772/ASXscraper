@@ -160,7 +160,7 @@ driver.close()
 
 This is a convenient way to run the Python script via a Desktop Link insead of from IDLE.
 
-- Download this batch file from [HERE](Selenium.bat) into the directory:  **C:\Users\roman\Documents\GitHub\ASXscraper**.
+- Download this batch file **Selenium.bat** from [HERE](Selenium.bat) into the directory:  **C:\Users\roman\Documents\GitHub\ASXscraper**.
 
   ```
   REM adjust directory to Python script as required
@@ -169,3 +169,5 @@ This is a convenient way to run the Python script via a Desktop Link insead of f
   ```
 
 - This directory might need to be created and can be changed, but you must do so consistently.
+- Once **Selenium.bat** is downloaded, create a shortcut from its directory and drag it to the desktop. This can then be pressed to conveniently run the Python script.
+
