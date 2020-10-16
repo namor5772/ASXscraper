@@ -150,4 +150,12 @@ driver.close()
 
 - Download it from [HERE](ASX_Selenium_scraper.py) into the directory **C:\Users\roman\Documents\GitHub\ASXscraper**.
 - This directory might need to be created and can be changed, but you must do so consistently.
-- At this point you should be able to succesfully run it from IDLE 
+- At this point you should be able to succesfully run this Python script from IDLE:
+
+  ![alt text](images/PythonCode.png "Selenium Install")
+
+- When completed (it takes some time) open the Excel workbook to see the updated price data in the **Shares** worksheet.
+
+## Get the Batch file
+
+This 
