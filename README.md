@@ -17,12 +17,16 @@ Basic python program that uses Selenium to automatically collect EOD settlement 
 - Create Desktop Shortcut for running IDLE
   - There are several ways of doing this. The easiest being to drag the IDLE icon from the start menu (Left mouse button click on Window Icon on the Task Bar) to the desktop:
 ![alt text](images/PythonInstall2.png "Python Desktop Shortcut")
-  - Once run selecting **File=>Path Browser** lets you see where everything is located.
-- Install the Selenium python Module.
-  - Open the command terminal by running the Command Prompt App. You can find it by typing **Command Prompt** in the Search bar. Run:
-    ``` 
-    python -m pip install selenium
-    ```
-  - If not already installed you should see something like this in the terminal window
+  - Once run select **File=>Path Browser**. This lets you see where everything is located.
+
+## Install the Selenium Python module
+
+- Open the command terminal by running the Command Prompt App. You can find it by typing **Command Prompt** in the Search bar
+- Run
+  ``` 
+  python -m pip install selenium
+  ```
+- If not already installed you should see something like this in the terminal window
 ![alt text](images/SeleniumInstall.png "Selenium Install")
-...
+
+## Install the openpyxl Python module.

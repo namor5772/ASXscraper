@@ -42,8 +42,8 @@ driver = webdriver.Chrome('E:/Media/chromedriver_win32/chromedriver.exe')
 fn = "C:\\Users\\roman\\OneDrive\\Python\\Tax.xlsx"
 #fn = 'TaxTest.xlsx'
 
-wb = openpyxl.load_workbook(fn)
-ws = wb['Shares'] 
+#wb = openpyxl.load_workbook(fn)
+#ws = wb['Shares'] 
 
 i=2
 for x in ASXshareslist:
@@ -61,13 +61,13 @@ for x in ASXshareslist:
     sPrice = '{:7.3f}'.format(fPrice)
     print(sShare+' : ',sPrice)
     
-    cr = ws.cell(row=i, column=2)
-    cr.value=sShare
+#    cr = ws.cell(row=i, column=2)
+#    cr.value=sShare
     
-    cr = ws.cell(row=i, column=3)
-    cr.value=fPrice
+#    cr = ws.cell(row=i, column=3)
+#    cr.value=fPrice
 
-wb.save(fn)
+#wb.save(fn)
 driver.close()
 
 
