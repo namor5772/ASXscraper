@@ -21,6 +21,8 @@ Basic python program that uses Selenium to automatically collect EOD settlement 
 
 ## Install the Selenium Python module
 
+This enables python to interact with websites.
+
 - Open the command terminal by running the Command Prompt App. You can find it by typing **Command Prompt** in the Search bar. Now type the following and press the Enter key:
   ``` 
   python -m pip install selenium
@@ -32,7 +34,9 @@ Basic python program that uses Selenium to automatically collect EOD settlement 
 **C:\Users\roman\AppData\Local\Programs\Python\Python39\Lib\site-packages**
 ![alt text](images/SeleniumInstall2.png "Selenium Install2")
 
-## Install the openpyxl Python module.
+## Install the openpyxl Python module
+
+This enables python to interact with Excel workbooks.
 
 - In command terminal run
   ``` 
@@ -40,3 +44,8 @@ Basic python program that uses Selenium to automatically collect EOD settlement 
   ```
 - If not already installed you should see something like this in the terminal window
 ![alt text](images/OpenpyxlInstall.png "Selenium Install")
+- You can confirm installation analagously to Selenium above.
+
+## Install the Chrome Drive
+
+This an interface used by Selenium to control the Chrome browser.
