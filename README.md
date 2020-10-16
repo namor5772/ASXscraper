@@ -1,12 +1,13 @@
 # ASX scraper
 
-Basic python program that uses Selenium to automatically collect EOD settlement prices for a list of shares. This is a a rewrite of previous code that does not work due to "upgrades" to the ASX websites that previously worked with Beautifull Soup.
+Basic python program that uses Selenium to automatically collect EOD settlement prices for a list of shares. This is a a rewrite of previous code that does not work due to "upgrades" to the ASX websites that previously worked with Beautiful Soup.
 
 ## Assumptions
 
  - We use a Windows 10 PC with internet
- - Google Chrome browser is installed
- - MS Excel is installed
+ - The Google Chrome browser is installed
+ - Microsoft Excel is installed
+ - The **C:\Users\roman\Documents\GitHub\ASXscraper** will be the working directory. It is arbitrary but if a different one is used it must be changed consistently.
 
 ## Download Python with IDLE and pip
 
@@ -51,11 +52,11 @@ This enables python to interact with Excel workbooks.
   ![alt text](images/OpenpyxlInstall.png "Selenium Install")
 - You can confirm installation analagously to Selenium above.
 
-## Install the Chrome Drive
+## Install the Chrome Driver
 
 This an interface used by Selenium to control the Chrome browser. You need a version consistent with your version of Chrome.
 
-- Find our which version of the Chrome browser you are using.
+- Find out which version of the Chrome browser you are using.
   - In the browser window click the three-dot icon in the top-right corner and select **Help=>About Google Chrome**
 
     ![alt text](images/Chrome.png "Chrome version")
@@ -65,4 +66,10 @@ This an interface used by Selenium to control the Chrome browser. You need a ver
   - Click on the link to the relevant driver version. In our case: **ChromeDriver 86.0.4240.22**
   https://chromedriver.storage.googleapis.com/index.html?path=86.0.4240.22/
   - Download **chromedriver_win32.zip**
+  - Extract this zip file into the directory **C:\Users\roman\Documents\GitHub\ASXscraper**. This might need to be created and can be changed, but you must do so consistently.
 
+    ![alt text](images/Chrome2.png "Selenium Install")
+
+## Get the Excel workbook
+
+This is where the EOD share prices are loaded when the python script is run. It is a workbook called Shares.xlsx and is assumed to have a **Shares** worksheet.
