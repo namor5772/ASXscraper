@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 import openpyxl
 import time
 
-# List of ASX codes for which EOD sellement prices will be obtained
+# List of ASX codes for which EOD sellement prices will be obtained. Adjust as desired.
 ASXshareslist = [['AC8',0],['AGL',0],['ALK',0],['ANZ',0],['BHP',0],
                  ['CAN',0],['CBA',0],['VUK',0],['DHG',0],['ERA',0],
                  ['NEC',0],['IAG',0],['JHG',0],['MPL',0],['MQG',0],
@@ -31,19 +31,24 @@ for x in ASXshareslist:
     # ASX share code being considered
     sShare = x[0]
 
-    # loops through ASX web pages that contain EOD share prices   
+    # loops through ASX web pages that contain EOD share prices
     driver.get('https://www2.asx.com.au/markets/company/'+sShare)
-    time.sleep(3) # need delay to alow time for web page to fully load
+    # need delay to alLow time for web page to fully load
+    time.sleep(3)
+    # this is the 'magik' tag that finds the string that contains the price (and some other data)
     el = driver.find_element_by_tag_name("dd").text
     ela = el.split()
     
     # ASX EOD share price is collected and formatted
+    # price is the first piece of 'blank' seperated data
     fPrice = float(ela[0])
+    # price saved here for potential future code enhancements
     x[1] = fPrice
     sPrice = '{:7.3f}'.format(fPrice)
     print(sShare+' : ',sPrice)
 
     # populating Excel workbook cells for considered share
+    # This code can be expanded/modified as desired.
     cr = ws.cell(row=i, column=2)
     cr.value=sShare
     cr = ws.cell(row=i, column=3)
@@ -54,5 +59,3 @@ wb.save(fn)
 
 # close interface to Chrome browser
 driver.close()
-
-
