@@ -82,7 +82,7 @@ This is where the EOD share prices are loaded into when the python script is run
 
 ## Get the Python Script
 
-This is the Python script that you run to download share prices. It assumes you have performed all the above installations. it is called **ASX_Selenium_scraper.py**
+This is **THE** Python script that you run to download share prices. It assumes you have performed all the above installations. It is called **ASX_Selenium_scraper.py**
 
 ```python
 from selenium import webdriver
@@ -129,11 +129,13 @@ for x in ASXshareslist:
     # ASX EOD share price is collected and formatted
     # price is the first piece of 'blank' seperated data
     fPrice = float(ela[0])
+    # price saved here for potential future code enhancements
     x[1] = fPrice
     sPrice = '{:7.3f}'.format(fPrice)
     print(sShare+' : ',sPrice)
 
     # populating Excel workbook cells for considered share
+    # This code can be expanded/modified as desired.
     cr = ws.cell(row=i, column=2)
     cr.value=sShare
     cr = ws.cell(row=i, column=3)
