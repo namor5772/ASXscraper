@@ -3,7 +3,8 @@ from selenium.webdriver.common.keys import Keys
 import openpyxl
 import time
 
-ASXshareslist = [['AC8',0],
+ASXshareslist = [
+                 ['AC8',0],
                  ['AGL',0],
                  ['ALK',0],
                  ['ANZ',0],
@@ -17,7 +18,6 @@ ASXshareslist = [['AC8',0],
                  ['IAG',0],
                  ['JHG',0],
                  ['MPL',0],
-                 ['MPL',0],
                  ['MQG',0],
                  ['MYR',0],
                  ['NAB',0],
@@ -27,7 +27,6 @@ ASXshareslist = [['AC8',0],
                  ['RIO',0],
                  ['RNE',0],
                  ['S32',0],
-                 ['S32',0],
                  ['SCP',0],
                  ['WBC',0],
                  ['WOW',0],
@@ -35,15 +34,13 @@ ASXshareslist = [['AC8',0],
                  ['IDZ',0],
                  ['AMP',0],
                  ['ORE',0],
-                 ['ASM',0]]
+                 ['ASM',0]
+                ]
 
-driver = webdriver.Chrome('E:/Media/chromedriver_win32/chromedriver.exe')
-
-fn = "C:\\Users\\roman\\OneDrive\\Python\\Tax.xlsx"
-#fn = 'TaxTest.xlsx'
-
-#wb = openpyxl.load_workbook(fn)
-#ws = wb['Shares'] 
+driver = webdriver.Chrome('C:\\Users\\roman\\Documents\\GitHub\\ASXscraper\\chromedriver.exe')
+fn = "C:\\Users\\roman\\Documents\\GitHub\\ASXscraper\\Shares.xlsx"
+wb = openpyxl.load_workbook(fn)
+ws = wb['Shares'] 
 
 i=2
 for x in ASXshareslist:
@@ -61,13 +58,13 @@ for x in ASXshareslist:
     sPrice = '{:7.3f}'.format(fPrice)
     print(sShare+' : ',sPrice)
     
-#    cr = ws.cell(row=i, column=2)
-#    cr.value=sShare
+    cr = ws.cell(row=i, column=2)
+    cr.value=sShare
     
-#    cr = ws.cell(row=i, column=3)
-#    cr.value=fPrice
+    cr = ws.cell(row=i, column=3)
+    cr.value=fPrice
 
-#wb.save(fn)
+wb.save(fn)
 driver.close()
 
 

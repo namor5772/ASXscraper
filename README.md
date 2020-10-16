@@ -21,12 +21,22 @@ Basic python program that uses Selenium to automatically collect EOD settlement 
 
 ## Install the Selenium Python module
 
-- Open the command terminal by running the Command Prompt App. You can find it by typing **Command Prompt** in the Search bar
-- Run
+- Open the command terminal by running the Command Prompt App. You can find it by typing **Command Prompt** in the Search bar. Now type the following and press the Enter key:
   ``` 
   python -m pip install selenium
   ```
-- If not already installed you should see something like this in the terminal window
+- If not already installed you should see something like this in the terminal window.
 ![alt text](images/SeleniumInstall.png "Selenium Install")
+- The directory from which you run the above is irrelevant.
+- You can confirm installation by looking for Selenium* directories in
+**C:\Users\roman\AppData\Local\Programs\Python\Python39\Lib\site-packages**
+![alt text](images/SeleniumInstall2.png "Selenium Install2")
 
 ## Install the openpyxl Python module.
+
+- In command terminal run
+  ``` 
+  python -m pip install openpyxl
+  ```
+- If not already installed you should see something like this in the terminal window
+![alt text](images/OpenpyxlInstall.png "Selenium Install")
