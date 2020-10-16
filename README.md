@@ -8,10 +8,10 @@ How to install and run a python script that uses Selenium to automatically colle
 - [Download Python with IDLE and pip](#Download-Python-with-IDLE-and-pip)
 - [Install the Selenium Python module](#Install-the-Selenium-Python-module)
 - [Install the openpyxl Python module](#Install-the-openpyxl-Python-module)
-- [Install the Chrome Driver](Install-the-Chrome-Driver)
-- [Get the Excel workbook](Get-the-Excel-workbook)
-- [Get and use the Python Script](Get-and-use-the-Python-Script)
-- [Get and use the Batch file](Get-and-use-the-Batch-file)
+- [Install the Chrome Driver](#Install-the-Chrome-Driver)
+- [Get the Excel workbook](#Get-the-Excel-workbook)
+- [Get and use the Python Script](#Get-and-use-the-Python-Script)
+- [Get and use the Batch file](#Get-and-use-the-Batch-file)
 
 ## **Assumptions**
 
