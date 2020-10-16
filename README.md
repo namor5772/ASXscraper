@@ -161,9 +161,11 @@ driver.close()
 This is a convenient way to run the Python script via a Desktop Link insead of from IDLE.
 
 - Download this batch file from [HERE](Selenium.bat) into the directory:  **C:\Users\roman\Documents\GitHub\ASXscraper**.
+
+  ```
+  REM adjust directory to Python script as required
+  @py.exe C:\Users\roman\Documents\GitHub\ASXscraper\ASX_Selenium_scraper.py %*
+  @pause
+  ```
+
 - This directory might need to be created and can be changed, but you must do so consistently.
-
-```bat
-
-```
-
