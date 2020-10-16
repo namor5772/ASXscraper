@@ -171,3 +171,8 @@ This is a convenient way to run the Python script via a Desktop Link insead of f
 - This directory might need to be created and can be changed, but you must do so consistently.
 - Once **Selenium.bat** is downloaded, create a shortcut from its directory and drag it to the desktop. This can then be pressed to conveniently run the Python script.
 
+  ![alt text](images/Batch.png "Batch")
+
+- When run the progress will be visible in a created terminal window. Close it after completion:
+
+  ![alt text](images/Batch2.png "Batch")
