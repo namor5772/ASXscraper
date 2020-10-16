@@ -1,15 +1,26 @@
 # ASX scraper
 
-Basic python program that uses Selenium to automatically collect EOD settlement prices for a list of shares. This is a a rewrite of previous code that does not work due to "upgrades" to the ASX websites that previously worked with Beautiful Soup.
+How to install and run a python script that uses Selenium to automatically collect/scrape EOD settlement prices for a list of shares. This is a a rewrite of previous code that stopped working due to "upgrades" to ASX websites that previously worked with Beautifull Soup.
 
-## Assumptions
+## **Contents**
+
+- [Assumptions](#Assumptions)
+- [Download Python with IDLE and pip](#Download-Python-with-IDLE-and-pip)
+- [Install the Selenium Python module](#Install-the-Selenium-Python-module)
+- [Install the openpyxl Python module](#Install-the-openpyxl-Python-module)
+- [Install the Chrome Driver](Install-the-Chrome-Driver)
+- [Get the Excel workbook](Get-the-Excel-workbook)
+- [Get and use the Python Script](Get-and-use-the-Python-Script)
+- [Get and use the Batch file](Get-and-use-the-Batch-file)
+
+## **Assumptions**
 
  - We use a Windows 10 PC with internet
  - The Google Chrome browser is installed
  - Microsoft Excel is installed
  - The **C:\Users\roman\Documents\GitHub\ASXscraper** will be the working directory. It is arbitrary but if a different one is used it must be changed consistently.
 
-## Download Python with IDLE and pip
+## **Download Python with IDLE and pip**
 
 - Go to https://www.python.org/downloads/windows/
 - For the latest Stable Releases download: **Windows x86-64 executable installer** or **Windows x86 executable installer** as appropriate
@@ -22,7 +33,7 @@ Basic python program that uses Selenium to automatically collect EOD settlement 
     ![alt text](images/PythonInstall2.png "Python Desktop Shortcut")
   - Once run select **File=>Path Browser**. This lets you see where everything is located.
 
-## Install the Selenium Python module
+## **Install the Selenium Python module**
 
 This enables python to interact with websites.
 
@@ -39,7 +50,7 @@ This enables python to interact with websites.
 
   ![alt text](images/SeleniumInstall2.png "Selenium Install2")
 
-## Install the openpyxl Python module
+## **Install the openpyxl Python module**
 
 This enables python to interact with Excel workbooks.
 
@@ -52,7 +63,7 @@ This enables python to interact with Excel workbooks.
   ![alt text](images/OpenpyxlInstall.png "Selenium Install")
 - You can confirm installation analagously to Selenium above.
 
-## Install the Chrome Driver
+## **Install the Chrome Driver**
 
 This an interface used by Selenium to control the Chrome browser. You need a version consistent with your version of Chrome.
 
@@ -72,7 +83,7 @@ This an interface used by Selenium to control the Chrome browser. You need a ver
 
   - NOTE: If the version has not changed you can download it from [HERE](chromedriver.exe)
 
-## Get the Excel workbook
+## **Get the Excel workbook**
 
 This is where the EOD share prices are loaded into when the python script is run. It is a workbook called **Shares.xlsx**
 
@@ -80,7 +91,7 @@ This is where the EOD share prices are loaded into when the python script is run
   - You can create it yourself as long as it has a **Shares** worksheet.
 - This directory might need to be created and can be changed, but you must do so consistently.
 
-## Get the Python Script
+## **Get and use the Python Script**
 
 This is **THE** Python script that you run to download share prices. It assumes you have performed all the above installations. It is called **ASX_Selenium_scraper.py**
 
@@ -156,7 +167,7 @@ driver.close()
 
 - When completed (it takes some time) open the Excel workbook to see the updated price data in the **Shares** worksheet.
 
-## Get the Batch file
+## **Get and use the Batch file**
 
 This is a convenient way to run the Python script via a Desktop Link insead of from IDLE.
 
