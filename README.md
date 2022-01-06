@@ -2,6 +2,8 @@
 
 How to install and run a python script that uses Selenium to automatically collect/scrape EOD settlement prices for a list of shares. This is a a rewrite of previous code that stopped working due to "upgrades" to ASX websites that previously worked with Beautifull Soup.
 
+-- NOTE: Some of the directories have changed but the principle remains --
+
 ## **Contents -**
 
 - [Assumptions](#Assumptions)
